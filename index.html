@@ -17,6 +17,26 @@
                     background-color: black;
                     height: 90px;
                 }
+                                /*Убрать полосу прокрутки у элемента*/
+            .element::-webkit-scrollbar {
+              width: 0;
+            }/* полоса прокрутки (скроллбар) */
+            ::-webkit-scrollbar {
+              width: 12px; /* ширина для вертикального скролла */
+              height: 12px; /* высота для горизонтального скролла */
+              background-color: #181818;
+            }
+
+            /* ползунок скроллбара */
+            ::-webkit-scrollbar-thumb {
+              background-color: #aaaaaa;
+              border-radius: 6px;
+              border: 3px solid;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+              background-color: #717171;
+            }
             </style>
 <head>
 <meta charset="utf-8">

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<style>
+    .Version {
+        font-style: bold;
+        color: rgb(255, 255, 255);
+        background-color: rgb(218, 55, 55);
+        border-radius: 3px;
+        height: 22px;
+        padding: 0px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .site-header {
+        background-color: black;
+        height: 90px;
+    }
+
+    /*Убрать полосу прокрутки у элемента*/
+
+    .element::-webkit-scrollbar {
+        width: 0;
+    }
+
+    /* полоса прокрутки (скроллбар) */
+
+    ::-webkit-scrollbar {
+        width: 16px;
+        /* ширина для вертикального скролла */
+        height: 16px;
+        /* высота для горизонтального скролла */
+        background-color: #181818;
+    }
+
+    /* ползунок скроллбара */
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #aaaaaa;
+        border-radius: 8px;
+        border: 4px solid;
+        color: #191919;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #717171;
+    }
+</style>
+
+<head>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(88113828, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/88113828" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <meta name="yandex-verification" content="bef8770f64b65879" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация о сайте и разрабочике">
+    <meta name="keywords"
+        content="css, discord, aledproject, aledgg, moreka, fist89, golive, fascor89, dew, dionix, bettediscord">
+
+    <meta property="og:title" content="ALED PROJECT | Главная">
+    <meta property="og:site_name" content="aledgg.ru">
+    <meta property="og:url" content="https://aledgg.ru">
+    <meta property="og:description" content="AledProject - Этот сайт создан разработчиком DIONIX#4638">
+    <meta property="og:image" content="https://aledgg.ru/icon/preview.png">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="900">
+
+    <title>ALED | Информация</title>
+    <link rel="icon" href="https://aledgg.ru/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Or use the CDN -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body class="is-boxed has-animations">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <footer class="site-footer">
+                            <ul class="footer-links list-reset">
+                                <h4 class="hero-title mt-0">
+                                    <a href="aledproject.github.io">ALED PROJECT</a>  Информация
+                                </h4>
+                                <style>
+                                    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+                                    .css-info{
+                                        color: #fff;
+                                    }
+                                    .css-link{
+                                        display: inline-flex;
+                                        text-decoration: none !important;
+                                        color: #7289DA;
+                                        background-color: rgba(114,137,218,.1);
+                                        border-radius: 3px;
+                                        padding: 0 2px;
+                                        cursor: pointer;
+
+                                    }
+                                    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+                                    .discord {
+                                    position: absolute; /* блок занимает ширину содержимого, max-width её ограничивает */
+                                    top: 0.8em; /* прикрепить к верху родителя */
+                                    right: 0;
+                                    transition: 0.2s;
+                                    display: inline-flex;
+                                    font-size: 18px;
+                                    letter-spacing: 0px;
+                                    font-weight: 600;
+                                    line-height: 16px;
+                                    text-decoration: none !important;
+                                    text-transform: none;
+                                    background-color: #2f39a7;
+                                    font-family: "Segoe UI", Georgia, Serif;
+                                    color: #fff;
+                                    border: none;
+                                    border-radius: 2px;
+                                    cursor: pointer;
+                                    justify-content: center;
+                                    padding: 7px 10px;
+                                    height: 32px;
+                                    text-align: center;
+                                    white-space: nowrap;
+                                    }                                    
+                                    .youtube {
+                                        position: absolute; /* блок занимает ширину содержимого, max-width её ограничивает */
+                                        top: 0.8em; /* прикрепить к верху родителя */
+                                        right: 120px;
+                                        transition: 0.2s;
+                                        display: inline-flex;
+                                        font-size: 18px;
+                                        letter-spacing: 0px;
+                                        font-weight: 600;
+                                        line-height: 16px;
+                                        text-decoration: none !important;
+                                        text-transform: none;
+                                        background-color: #800000;
+                                        font-family: "Segoe UI", Georgia, Serif;
+                                        color: #fff;
+                                        border: none;
+                                        border-radius: 2px;
+                                        cursor: pointer;
+                                        justify-content: center;
+                                        padding: 7px 10px;
+                                        height: 32px;
+                                        text-align: center;
+                                        white-space: nowrap;
+                                    }
+                                    
+                                    .youtube:hover {
+                                        transition: 0.2s;
+                                        color: #fff;
+                                        font-family: "Segoe UI", Georgia, Serif;
+                                        background: #650000;
+                                    }
+                                    .discord:hover {
+                                        transition: 0.2s;
+                                        color: #fff;
+                                        font-family: "Segoe UI", Georgia, Serif;
+                                        background: #1a248f;
+                                    }
+                                </style>
+                                <a class="discord" href="join" target="1">
+                                    <font 
+                                        style="font-family: 'Quicksand', sans-serif;" 
+                                        color="#fff"><img width="18" 
+                                        style="margin-right: 7px; display: inline-block;"
+                                        src="https://i.imgur.com/YjPbGlu.png"
+                                    >Discord </font></a>
+                                <a class="youtube" href="youtube" target="1">
+                                    <font 
+                                        style="font-family: 'Quicksand', sans-serif;" 
+                                        color="#fff"><img width="18" 
+                                        style="margin-right: 7px; display: inline-block;"
+                                        src="https://i.imgur.com/Tff1Gcx.png"
+                                    >YouTube </font></a>
+                                <li>
+                                    <ul class="footer-links list-reset">
+                                </li>
+                                <li>
+                                </li>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">DIONIX</h1>
+                            <p class="hero-paragraph">Информация разрабочика сайта</p>
+                            <div class="hero-cta">
+                                <a class="button" href="theme"
+                                >НАША ТЕМА BETTERDISCORD
+                                </a>
+                                <a class="button-primary" href="aledgg.ru"
+                                >aledgg.ru</a>
+                            </div>
+            </section>
+            </section>
+
+            </footer>
+
+            <div class="container">
+                <div style="
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: center">
+                <div class="brand header-brand">
+                    <div class="css-info" style="
+                        text-align: center;
+                        background: #680b0b;
+                        border-radius: 5px;
+                        margin-top: -70px;
+                        padding: 10px;
+                        border: 2px solid #FA1A1A;"
+                        >💕 Наш сайт переехал на новый домен <a class="css-link" href="aledgg.ru">aledgg.ru</a><br> 💥 Если у возникли проблемы с подкючением используйте VPN</div>
+
+                <footer class="site-footer">
+                <div class="css-info" style="
+                    background: #181818;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-weight: bolder;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    border: 2px solid #FA1A1A;"
+                        >
+                        <div class="css-info" style="
+                        text-align: center;
+                        background: #680b0b;
+                        border-radius: 4px;
+                        border-bottom-left-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                        margin-right: -0.4px;
+                        font-size: 18px;
+                        margin-top: -20px;
+                        margin-bottom: 15px;
+                        padding: 3px;
+                        border-bottom: 2px solid #FA1A1A;"
+                        >Информация</div>
+                    <i style="font-size: 16px;" class="em em-clapper" aria-role="presentation" aria-label=""></i>　•　Фильмы - 
+                <a href="aledgg.ru/films"
+                >Смотреть</a>
+                <br>
+                    <i style="font-size: 16px;" class="em em-tada" aria-role="presentation" aria-label=""></i>　•　Genshin Impact -
+                <a target="1"
+                >716616446</a>
+                <br>
+                    <i style="font-size: 16px;" class="em em-two_hearts" aria-role="presentation" aria-label=""></i>　•　TikTok - 
+                <a href="https://www.tiktok.com/@aledproject?" target="1"
+                >AledProject</a>
+                <br>
+                    <i style="font-size: 16px;" class="em em-video_game" aria-role="presentation" aria-label=""></i>　•　Steam - 
+                <a href="https://steamcommunity.com/id/fist89/" target="1"
+                >DIONIX (RU)</a>
+                <br>
+                    <i style="font-size: 16px;" class="em em-busts_in_silhouette" aria-role="presentation" aria-label="BUSTS IN SILHOUETTE"></i>　•　Вконтакте - 
+                <a href="https://vk.com/fist89" target="1"
+                >Морека Пушистая</a></h4></div>
+                </h4>
+
+                <div class="css-info" style="
+                    background: #181818;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: bolder;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    border: 2px solid #FA1A1A;"
+                            >
+                            <div class="css-info" style="
+                            text-align: center;
+                            background: #680b0b;
+                            border-radius: 4px;
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            margin-right: -0.4px;
+                            font-size: 18px;
+                            margin-top: -20px;
+                            margin-bottom: 15px;
+                            padding: 3px;
+                            border-bottom: 2px solid #FA1A1A;"
+                            >Акессуары   ➔   25470 руб</div>
+                    <i style="font-size: 16px;" class="em em-three_button_mouse" aria-role="presentation" aria-label=""></i>　•　Мышь RGB - 
+                <a href="https://www.mvideo.ru/products/igrovaya-mysh-red-square-ergonomica-rsq-10011-50118389" target="1"
+                >Red Square Ergonomica</a> - 1490 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-keyboard" aria-role="presentation" aria-label=""></i>　•　Клавиатура RGB - 
+                <a href="https://www.citilink.ru/product/klaviatura-razer-cynosa-lite-usb-chernyi-rz03-02741500-r3r1-1364486/?yclid=5222216904323676432&utm_source=yandex&utm_medium=cpc&utm_campaign=cities-srch-cat-dsa_fid&utm_term=&utm_content=%7Cc%3A44674892%7Cg%3A4068975730%7Cb%3A8464741397%7Ck%3A965826%7Cst%3Asearch%7Ca%3Ano%7Cs%3Anone%7Ct%3Apremium%7Cp%3A2%7Cr%3AКомпьютеры%2C%20комплектующие%2C%20периферия%7Cdev%3Adesktop&utm_param1=all" target="1"
+                >Razer Cynosa Lite</a> - 2970 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-studio_microphone" aria-role="presentation" aria-label=""></i>　•　Микрофон USB - 
+                <a href="https://www.citilink.ru/product/mikrofon-sunwind-sw-sm400g-chernyi-dhr-169i-1427268" target="1"
+                >SUNWIND SW-SM400G</a> - 1990 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-iphone" aria-role="presentation" aria-label="MOBILE PHONE"></i>　•　Смартфон 32GB - 
+                <a href="https://www.citilink.ru/product/smartfon-xiaomi-redmi-9c-32gb-3gb-oranzhevyi-3g-4g-6-53-and10-wifi-nfc-1407121/properties" target="1"
+                >Xiaomi Redmi 9C NFC 32GB</a> - 9230 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-desktop_computer" aria-role="presentation" aria-label=""></i>　•　Монитор FullHD - 
+                <a href="https://www.citilink.ru/product/monitor-samsung-s24f354fhi-23-5-chernyi-ls24f354fhixci-1200387" target="1"
+                >SAMSUNG S24F354FHI 23.5</a> - 9790 руб</div>
+                <div class="css-info" style="
+                    background: #181818;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    font-weight: bolder;
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    border: 2px solid #FA1A1A;"
+                >
+                <div class="css-info" style="
+                text-align: center;
+                background: #680b0b;
+                border-radius: 4px;
+                font-size: 18px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+                margin-right: -0.4px;
+                margin-top: -20px;
+                margin-bottom: 15px;
+                padding: 3px;
+                border-bottom: 2px solid #FA1A1A;"
+                >Компьютер   ➔   34469 руб</div>
+                    <i style="font-size: 16px;" class="em em-toolbox" aria-role="presentation" aria-label="TOOLBOX"></i>　•　Корпус Midi-Tower - 
+                <a href="https://www.citilink.ru/product/korpus-atx-formula-f-3402-midi-tower-bez-bp-chernyi-1169764/" target="1"
+                >ATX FORMULA F-3402</a> - 2870 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-ballot_box_with_ballot" aria-role="presentation" aria-label=""></i>　•　Блок питания 550W - 
+                <a href="https://www.citilink.ru/product/blok-pitaniya-aerocool-vx-plus-550w-550vt-120mm-chernyi-retail-vx-550-1049257" target="1"
+                >AEROCOOL VX PLUS</a> - 2170 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-abacus" aria-role="presentation" aria-label="ABACUS"></i>　•　Материнская плата DDR4 - 
+                <a href="https://www.citilink.ru/product/materinskaya-plata-asus-prime-a320m-k-socketam4-amd-a320-matx-ret-472728/properties" target="1"
+                >ASUS PRIME A320M-K</a> - 4340 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-bento" aria-role="presentation" aria-label="BENTO BOX"></i>　•　Процессор SoketFM4 - 
+                <a href="https://www.citilink.ru/product/processor-amd-a10-9700-socketam4-oem-ad9700agm44ab-1005246/?text=AMD+A10" target="1"
+                >AMD A10 9700</a> - 6140 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-vhs" aria-role="presentation" aria-label="VIDEOCASSETTE"></i>　•　Видеокарта 2GB - 
+                <a href="https://www.citilink.ru/product/videokarta-gigabyte-nvidia-geforce-gt-710-gv-n710d3-2gl-2gb-ddr3-low-p-353693/?yclid=827676358491528658&utm_source=yandex&utm_medium=cpc&utm_campaign=cities-srch-cat-dsa_fid&utm_term=&utm_content=%7Cc%3A44674892%7Cg%3A4068975707%7Cb%3A8464741374%7Ck%3A965803%7Cst%3Asearch%7Ca%3Ano%7Cs%3Anone%7Ct%3Apremium%7Cp%3A1%7Cr%3AВидеокарты%7Cdev%3Adesktop&utm_param1=all" target="1"
+                >Nvidia GeForce GT 710</a> - 4590 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-loop" aria-role="presentation" aria-label="DOUBLE CURLY LOOP"></i>　•　Память х2 8GB - 
+                <a href="https://www.citilink.ru/product/modul-pamyati-kingston-hyperx-fury-black-hx424c15fb3-8-ddr4-8gb-2400-d-1183633/?text=KINGSTOM+HYPERX+FURY+BLASK+HX424C15FB3%2F8+DDR4+-+8ГБ+2400%2C+DIMM%2C+RET]HyperX FURY HX424C15FB3" target="1"
+                >HyperX FURY HX424C15FB3</a> - 3690 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-cd" aria-role="presentation" aria-label="OPTICAL DISC"></i>　•　HDD диск 500 - 
+                <a href="https://www.citilink.ru/product/zhestkii-disk-seagate-desktop-st500dm002-500gb-hdd-sata-iii-3-5-628876/" target="1"
+                >SEAGATE ST500DM002</a> - 2499 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-dvd" aria-role="presentation" aria-label="DVD"></i>　•　SSD диск 120GB - 
+                <a href="https://www.citilink.ru/product/ssd-nakopitel-a-data-ultimate-su650-asu650ss-120gt-r-120gb-2-5-sata-ii-1087966" target="1"
+                >A-DATA SU650</a> - 1690 руб
+                <br>
+                    <i style="font-size: 16px;" class="em em-dvd" aria-role="presentation" aria-label="DVD"></i>　•　SSD диск 240GB - 
+                <a href="https://www.citilink.ru/product/ssd-nakopitel-a-data-ultimate-su650-asu650ss-240gt-r-240gb-2-5-sata-ii-1091578/" target="1"
+                >A-DATA SU650</a> - 2790 руб</div>
+                <br><br>
+                <br><br>
+                </section>
+                </main>
+                </footer>
+                </div>
+                <script src="dist/js/main.min.js"></script>
+                </body>
+                </html>
+                
+                

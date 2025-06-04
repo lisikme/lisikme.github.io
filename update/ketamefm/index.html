@@ -1,0 +1,314 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    html{
+        background: #000000;
+    }
+    body {
+        font-family: "Rubik", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    .loading-text {
+        font-size: 10px;
+        font-weight: 400;
+        color: #93ceff;
+        /* margin-top: 1px; */
+    }
+    .error-text {
+        font-size: 10px;
+        font-weight: 400;
+        color: #ff8a8a;
+        /* margin-top: 1px; */
+    }
+    .appname-text {
+        color: #ff9cab;
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .progress-container {
+        width: 100%;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        margin-top: 2px;
+        overflow: hidden;
+    }
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, #0078d7, #5db3ff);
+        animation: progress 3s forwards;
+    }
+    .error-bar {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, #ff3636, #ff5757);
+    }
+    @keyframes progress {
+        to {width: 100%}
+    }
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    #box-load{
+        background-color: #00555865;
+        margin-top: 10px;
+        border-radius: 3px;
+        display: flex;
+        width: 130px;
+        padding: 4px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    @keyframes steam {
+        0% {
+            background-position: 0% 0;
+        }
+        25% {
+            background-position: 100% 0;
+        }
+        50% {
+            background-position: 0% 0;
+        }
+        75% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: 0% 0;
+        }
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KetaMeFM</title>
+</head>
+<body>
+    <img src="./icon.png">
+    <div class="appname-text">KetaMeFM</div>
+    <div id="box-load">
+        <div class="loading-text">Обновление</div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+    <script>
+        const timeout = 3000;
+        const targetUrl = "http://live.ketame8.ru";
+        const loadingText = document.querySelector('.loading-text');
+        const progressBar = document.querySelector('.progress-bar');
+        fetch(targetUrl, {method: 'HEAD', mode: 'no-cors'})
+            .then(() => {
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, timeout);
+            })
+            .catch(() => {
+                setTimeout(() => {
+                    loadingText.classList.remove('loading-text');
+                    progressBar.classList.remove('progress-bar');
+                    loadingText.classList.add('error-text');
+                    progressBar.classList.add('error-bar');
+                    progressBar.style.width = '100%';
+                    loadingText.textContent = "Ошибка сервера";
+                }, timeout);
+            });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KetaMeFM</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Rubik", sans-serif;
+            background-color: #000;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* RGB Background Animation */
+        .rgb-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background: linear-gradient(45deg, #ff4dd0, #008cff, #00ff99);
+            background-size: 1000% 1000%;
+            animation: rgb-gradient 2s ease infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes rgb-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Main content styles */
+        img {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            /* margin-bottom: 15px; */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .appname-text {
+            color: #fff;
+            margin-top: 2px;
+            font-size: 16px;
+            font-weight: 100;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        #box-load {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+            border-radius: 4px;
+            display: flex;
+            width: 140px;
+            padding: 4px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .loading-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: #a2cdff;
+            line-height: 10px;
+            margin-bottom: 6px;
+        }
+        
+        .error-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: #ff5555;
+            line-height: 10px;
+            margin-bottom: 6px;
+            text-shadow: 0 0 5px rgba(255, 85, 85, 0.5);
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgb(22, 22, 22);
+            border-radius: 2px;
+            overflow: hidden;
+            /* border: 1px solid rgba(0, 0, 0, 0.1); */
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #0078d7, #5db3ff);
+            animation: progress 3s forwards;
+            /* border-radius: 2px; */
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .error-bar {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #ff0000, #ff5555);
+            /* border-radius: 2px; */
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        @keyframes progress {
+            to { width: 100% }
+        }
+
+        @keyframes progress-color {
+            0% { background: linear-gradient(90deg, #ff00ff, #00ffff); }
+            25% { background: linear-gradient(90deg, #00ffff, #ffff00); }
+            50% { background: linear-gradient(90deg, #ffff00, #ff00ff); }
+            75% { background: linear-gradient(90deg, #ff00ff, #00ff00); }
+            100% { background: linear-gradient(90deg, #00ff00, #ff00ff); }
+        }
+    </style>
+</head>
+<body>
+    <!-- RGB Background -->
+    <div class="rgb-bg"></div>
+    <div class="rgb-grid"></div>
+
+    <!-- Main content -->
+    <img src="./icon.png">
+    <div class="appname-text">KetaMeFM</div>
+    <div id="box-load">
+        <div class="loading-text">Обновление</div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script>
+        const timeout = 3000;
+        const targetUrl = "http://live.ketame.ru/app";
+        const loadingText = document.querySelector('.loading-text');
+        const progressBar = document.querySelector('.progress-bar');
+        
+        fetch(targetUrl, {method: 'HEAD', mode: 'no-cors'})
+            .then(() => {
+                setTimeout(() => {
+                    window.location.href = targetUrl;
+                }, timeout);
+            })
+            .catch(() => {
+                setTimeout(() => {
+                    loadingText.classList.remove('loading-text');
+                    progressBar.classList.remove('progress-bar');
+                    loadingText.classList.add('error-text');
+                    progressBar.classList.add('error-bar');
+                    progressBar.style.width = '100%';
+                    loadingText.textContent = "Сетевая ошибка";
+                }, timeout);
+            });
+    </script>
+</body>
+</html>
